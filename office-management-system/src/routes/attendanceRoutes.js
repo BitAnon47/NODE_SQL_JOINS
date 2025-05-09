@@ -4,7 +4,7 @@ const attendanceController = require('../controllers/attendanceController');
 
 // CRUD operations
 router.post('/', attendanceController.createAttendance);
-router.get('/', attendanceController.getAttendance);
+router.get('/get', attendanceController.getAttendance);
 router.put('/:id', attendanceController.updateAttendance);
 router.delete('/:id', attendanceController.deleteAttendance);
 
