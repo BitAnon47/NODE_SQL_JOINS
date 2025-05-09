@@ -4,7 +4,7 @@ const departmentController = require('../controllers/departmentController');
 
 // CRUD operations for departments
 router.post('/', departmentController.createDepartment);
-router.get('/', departmentController.getDepartment);
+router.get('/get/:id', departmentController.getDepartment);
 router.put('/:id', departmentController.updateDepartment);
 router.delete('/:id', departmentController.deleteDepartment);
 
